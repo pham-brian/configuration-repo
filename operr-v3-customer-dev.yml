@@ -1,0 +1,72 @@
+# From constant.properties
+APP_ENV: local
+AWS_KEY: AKIAJYPCBKFMAJOAOUEA
+AWS_SECRET: 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
+AWS_S3_URL: https://s3.amazonaws.com/operr-3.0.0/
+AWS_S3_BUCKET: operr-3.0.0
+AWS_S3_BASE_FOLDER: dev/
+AWS_S3_REGION: us-east-1
+AWS_S3_ADMIN_IMG_FOLDER: admin/
+AWS_S3_DRIVER_IMG_FOLDER: driver/
+AWS_S3_USER_IMG_FOLDER: user/
+GOOGLE_API_KEY: AIzaSyAi49lL84Iw110hJppU4AyXwb7OmGyFvOU
+FLIGHTSTATS_APP_ID: 1386ce8c
+FLIGHTSTATS_APP_KEY: 0f0118464dfced76875b98775d6a8a99
+TWILIO_ACCOUNT_SID: AC667a11ac090599737f807bc4b91a5133
+TWILIO_AUTH_TOKEN: 6f6a4b9394901a02bd28bc8d43d302d1
+TWILIO_FROM :  +19179354220
+WEBSITE_BASE_URL: https://platform.ecarride.com/operr_dev
+AUTHORIZE_NET_API_LOGIN_ID: 6m7C7MyhLS
+AUTHORIZE_NET_TRANSACTION_KEY: 32NS92zg96Ar436M
+flyway:
+    enabled: true
+    out-of-order: false
+    password: 0p8rr@SQL
+    url: jdbc:mysql://69.18.194.204:3306/operr_v3_dev_sp1?characterEncoding=UTF-8
+    user: root
+    validate-on-migrate: false
+logging:
+    level:
+        com:
+            operr: DEBUG
+server:
+    port: 9072
+spring:
+    data:
+        mongodb:
+            database: operr_v3_dev
+            field-naming-strategy: ''
+            grid-fs-database: ''
+            host: 192.168.130.62
+            password: 0p8rr@Fruit
+            port: 27017
+            repositories:
+                enabled: true
+            username: root
+    datasource:
+        password: 0p8rr@SQL
+        url: jdbc:mysql://69.18.194.204:3306/operr_v3_dev_sp1?characterEncoding=UTF-8
+        username: root
+    jpa:
+        show-sql: true
+    kafka:
+        brokerAddress: 69.18.194.203:9092
+        groupId: customer
+    logging:
+        level:
+            org:
+                hibernate:
+                    SQL: debug
+    redis:
+        database: 0
+        host: 69.18.194.202
+        password: FYeuFEQVtshmZrXDCdVZNrGsSz7S8bz8
+        port: 6379
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:8762/user

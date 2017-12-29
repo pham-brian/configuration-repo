@@ -1,0 +1,43 @@
+flyway:
+    enabled: true
+    out-of-order: false
+    password: 0p8rr@SQL
+    url: jdbc:mysql://192.168.130.62:3306/operr_v3_dev_sp1?characterEncoding=UTF-8
+    user: root
+    validate-on-migrate: false
+logging:
+    level:
+        com:
+            operr: DEBUG
+server:
+    port: 9082
+spring:
+    data:
+        mongodb:
+            database: operr_v3_dev
+            field-naming-strategy: ''
+            grid-fs-database: ''
+            host: 192.168.130.62
+            password: 0p8rr@Fruit
+            port: 27017
+            repositories:
+                enabled: true
+            username: root
+    datasource:
+        password: 0p8rr@SQL
+        url: jdbc:mysql://192.168.130.62:3306/operr_v3_dev_sp1?characterEncoding=UTF-8
+        username: root
+    elastic:
+        url: https://search-operrv3-gpj6iqx5tyhmnydcaxm3et6upq.us-east-1.es.amazonaws.com:443
+    jpa:
+        show-sql: true
+    logging:
+        level:
+            org:
+                hibernate:
+                    SQL: debug
+    redis:
+        database: 0
+        host: 192.168.130.60
+        password: FYeuFEQVtshmZrXDCdVZNrGsSz7S8bz8
+        port: 6379
