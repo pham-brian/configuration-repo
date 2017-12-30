@@ -22,7 +22,7 @@ flyway:
     enabled: true
     out-of-order: false
     password: 0p8rr@SQL
-    url: jdbc:mysql://69.18.194.204:3306/operr_v3_dev_sp1?characterEncoding=UTF-8
+    url: jdbc:mysql://69.18.194.204:3306/operr_v3_dev_sp2?characterEncoding=UTF-8
     user: root
     validate-on-migrate: false
 logging:
