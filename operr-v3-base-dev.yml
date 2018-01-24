@@ -32,6 +32,9 @@ logging:
     level:
         com:
             operr: DEBUG
+druid:
+    stat:
+        slowSqlMillis: 5000
 server:
     port: 9070
 spring:
@@ -52,10 +55,28 @@ spring:
         password: 0p8rr@SQL
         url: jdbc:mysql://69.18.194.204:3306/operr_v3_dev_sp1?characterEncoding=UTF-8
         username: root
+        connectionProperties: druid.stat.mergeSql=true;
+        driverClassName: com.mysql.jdbc.Driver
+        filters: stat,wall,log4j
+        initialSize: 5
+        maxActive: 20
+        maxPoolPreparedStatementPerConnectionSize: 20
+        maxWait: 60000
+        minEvictableIdleTimeMillis: 300000
+        minIdle: 5
+        poolPreparedStatements: true
+        testOnBorrow: false
+        testOnReturn: false
+        testWhileIdle: true
+        timeBetweenEvictionRunsMillis: 60000
+        type: com.alibaba.druid.pool.DruidDataSource
+        validationQuery: SELECT 1 FROM DUAL
+    jackson:
+        property-naming-strategy: SNAKE_CASE
     jpa:
         show-sql: true
     kafka:
-        bootstrap-servers: 69.18.194.203:9092
+        bootstrap-servers: 34.205.236.80:9092
         consumer:
             group-id: operr
     logging:
@@ -65,8 +86,9 @@ spring:
                     SQL: debug
     redis:
         database: 0
-        host: 69.18.194.202
-        password: FYeuFEQVtshmZrXDCdVZNrGsSz7S8bz8
+        host: localhost
+        #host: 69.18.194.202
+        #password: FYeuFEQVtshmZrXDCdVZNrGsSz7S8bz8
         port: 6379
     application:
         name: operr-v3-base
@@ -74,3 +96,16 @@ security:
   oauth2:
     resource:
       userInfoUri: http://localhost:8762/user
+operr:
+    logging:
+        logstash:
+            enabled: true
+            host: 192.168.130.66
+            port: 9067
+            queue-size: 512
+    search:
+        location:
+            radius: 17
+            
+#below configure is for spring boot admin
+management.security.enabled: false
