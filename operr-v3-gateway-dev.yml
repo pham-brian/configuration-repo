@@ -61,29 +61,29 @@ spring:
 zuul:
     routes:
           operr-v3-base:
-                path: /base/**
-                url: http://localhost:9070/
+                path: /base2/**
+                serviceId: operr-v3-base
           operr-v3-core:
                 path: /core/**
-                url: http://localhost:9071/
+                serviceId: operr-v3-core
           operr-v3-customer:
                 path: /customer/**
-                url: http://localhost:9072/
+                serviceId: operr-v3-customer
           operr-v3-driver:
                 path: /driver/**
-                url: http://localhost:9073/
+                serviceId: operr-v3-driver
           operr-v3-message:
                 path: /message/**
-                url: http://localhost:9074/
+                serviceId: operr-v3-message
           operr-v3-schedule:
                 path: /compliance/**
-                url: http://localhost:9075/
+                serviceId: operr-v3-schedule
           operr-v3-billing:
                 path: /billing/**
-                url: http://localhost:8766/
+                serviceId: operr-v3-billing
           operr-v3-sso:
                 path: /sso/**
-                url: http://localhost:8088/
+                serviceId: operr-v3-sso
                 
 #below configure is for spring boot admin
 management.security.enabled: false
