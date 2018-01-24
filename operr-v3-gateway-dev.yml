@@ -61,7 +61,7 @@ spring:
 zuul:
     routes:
           operr-v3-base:
-                path: /base2/**
+                path: /base/**
                 serviceId: operr-v3-base
           operr-v3-core:
                 path: /core/**
