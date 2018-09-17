@@ -8,3 +8,10 @@ management:
 ribbon:
   eureka:
     enabled: false
+zuul:
+  routes:
+    micro-service-1:
+      path: /service-1/**
+      serviceId: micro-service-1
+server:
+  port: 8080
