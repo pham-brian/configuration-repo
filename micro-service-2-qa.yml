@@ -1,8 +1,8 @@
-msg : Hello world - this is from config server for DEV
+msg : Hello world - this is from config server for QA
 branch: Master
 server:
-  contextPath: /service-1
-  port: 8081
+  contextPath: /service-2
+  port: 8082
 eureka:
   client:
     serviceUrl:
