@@ -1,7 +1,6 @@
 msg : Hello world - this is from config server for QA
 branch: Master
 server:
-  contextPath: /service-1
   port: 8081
 eureka:
   client:

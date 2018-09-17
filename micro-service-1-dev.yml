@@ -1,7 +1,6 @@
 msg : Hello world - this is from config server for DEV
 branch: Master
 server:
-  contextPath: /service-1
   port: 8081
 eureka:
   client:
