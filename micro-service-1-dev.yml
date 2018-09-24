@@ -1,4 +1,4 @@
-msg : Hello world - this is from config server for DEV
+msg : micro service 1 - Hello world - this is from config server for DEV
 branch: Master
 server:
   port: 8081
