@@ -1,4 +1,4 @@
-msg : micro service 2 - Hello world - this is from config server for DEV
+msg : micro service 2 - Hello world - this is from config server for DEV branch Master
 branch: Master
 server:
   contextPath: /service-2
