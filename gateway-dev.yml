@@ -14,6 +14,9 @@ zuul:
     micro-service-1:
       path: /service1/**
       serviceId: MICRO-SERVICE-1
+    micro-service-2:
+      path: /service2/**
+      serviceId: MICRO-SERVICE-2
 
 server:
   port: 8080
