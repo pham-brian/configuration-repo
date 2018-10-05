@@ -10,5 +10,8 @@ management:
 ribbon:
   eureka:
     enabled: false
+zipkin:
+  self-tracing:
+    enabled: false
 server:
   port: 9411
