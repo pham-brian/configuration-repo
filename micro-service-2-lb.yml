@@ -1,7 +1,7 @@
 msg : micro service 2 load balancer - Hello world - this is from config server for DEV branch Master
 branch: Master
 server:
-  port: 8082
+  port: 8083
 eureka:
   client:
     serviceUrl:
