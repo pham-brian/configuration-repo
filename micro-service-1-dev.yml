@@ -1,4 +1,5 @@
-msg : micro service 1 - Hello world - this is from config server for DEV brach Master - change config
+#msg : micro service 1 - Hello world - this is from config server for DEV brach Master - change config
+msg : Happy New 
 branch: Master
 server:
   port: 8081
