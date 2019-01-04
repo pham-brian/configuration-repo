@@ -1,4 +1,4 @@
-msg : micro service 2 - Hello world - this is from config server for DEV branch Master
+msg : micro service 2 Load Blancing - Hello world
 branch: Master
 server:
   port: 8083
